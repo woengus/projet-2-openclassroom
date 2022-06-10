@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /*importation de la police Raleway*/
+
+* { /*utilisation de la police pour toute la page web*/
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing:border-box ;
+    box-sizing: border-box; 
+    font-family: 'Raleway', sans-serif;
+}
+
+/* placeholder de la recherche en noir et bold*/
+::-webkit-input-placeholder {
+    color: black;
+    font-weight: 800;
+ }
+ :-moz-placeholder { /* Firefox 18- */
+    color: black;  
+    font-weight: 800;
+ }
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color: black;  
+    font-weight: 800;
+ }
+ :-ms-input-placeholder {  
+    color: black;  
+    font-weight: 800;
+ }
+nav {
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+nav a {
+    padding:20px;
+    border-top: 2px solid transparent;/* évite que le hover rajoute des pixels et fase bouger le texte et le logo*/
+}
+nav a:hover {
+    color:#0065FC;
+    border-top-color:#0065FC;
+}
+.sub-nav {
+    display: flex;
+}
+#logo {
+    margin-right: auto;
+    padding-left: 0 20px; /*padding horizontal*/
+}
+a {
+    color:inherit;
+    text-decoration: none;
+}
+input[type="search"], input[type="submit"] { /*enleve les styles par défauts des boutons et barre de recherche*/
+    border:none;
+}
+.filtre-bordure {
+    border:solid 1px gray;
+    border-radius:20px;
+    height: 65px;
+}
+.bold{
+    font-weight: bold;
+}
+.info {
+    padding-left:20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.noir {
+    color:black;
+}
+.bleu-fonce {
+    color: #0065FC
+}
+.bleu-clair {
+    color: #DEEBFF;
+}
+.gris {
+    color:#F2F2F2;
+}
+.gris-fonce {
+    color:#888
+}
+.page-search {
+    padding: 20px 20px 0px 20px;
+    font-size: 18px;
+    font-weight: bold; 
+}
+.page-search p {
+    font-size: 16px;
+    font-weight: normal;
+}
+.bordureSearch {
+    padding: 0 20px;
+}
+
+.economique, .familial, .romantique, .animaux-autorises {
+    border-radius: 20px;
+    border:solid gray;
+    border-width : 2px;
+    padding:20px;
+    margin:10px;
+ 
+}
+.economique i, .familial i, .romantique i, .animaux-autorises i {
+    border-radius: 20px;
+    border:solid gray;
+    border-width :1px;
+   
+}
+.cercle {
+    height: 125px;
+    width: 125px;
+    background-color: #bbb;
+    border-radius: 50%;
+}
+#content {
+    padding: 10px 20px 0px 20px;
+}
+li {
+    list-style: none; /*enlève les puces*/
+}
+.nav-ul {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+nav {
+    margin: 10px;
+}
+.bold {
+    font-weight: bold;
+}
+
+.back-grey {
+    background-color:#F2F2F2 ;
+   
+}
+.black {
+    color:black;
+}
+
+.fa-solid { 
+    vertical-align: middle;
+}
+.fa-map-marker-alt { /*style de l'icone map*/
+    padding:7px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.bordureSearch {
+    display: flex;
+    width: 320px;
+}
+
+.button-color {
+    color:white;
+    background-color:#0065FC ;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 30px;
+    width: 100px;
+    
+}
+#town-search {
+    height: 30px;
+    width: 200px;
+    border:1px solid #F2F2F2;
+}
+.content1_2 {
+    display:flex;
+    flex-direction:row ;
+    width: 1200px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#content1 {
+    background-color: #F2F2F2;
+    width: 750px;
+    height:700px;
+    border-radius:30px;
+    padding:15px;
+    
+}
+#content2 {
+    background-color: #F2F2F2;
+    width:330px;
+    height:700px;
+    border-radius:30px;
+    padding:15px;
+}
+.articles {
+    
+    display:flex;
+    flex-direction:row ;
+    flex-wrap: wrap;
+    width: 750px;
+    height:600px;
+}
+.article-content {
+    width: 200px;
+    height:220px;
+    padding: 20px;
+    margin:18px;
+    border: solid 1px white;
+    border-radius:20px;
+    background-color: white;
+}
+.article-content2 {
+    width: 265px;
+    height:165px;
+    padding: 20px;
+    margin:18px;
+    border: solid 1px white;
+    border-radius:20px;
+    background-color: white;
+}
+
+.flexbox-activites {
+    display:flex;
+    flex-direction:row ;
+    width: 1200px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+/*différentes tailles des articles en Activités à Marseille*/
+.flexbox-activites-article {
+    border: solid 1px white;
+    border-radius:20px;
+    background-color: white;
+    width: 200px;
+    height: 320px;
+    box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
+}
+.flexbox-activites-article-small {
+    border: solid 1px white;
+    border-radius:20px;
+    background-color: white;
+    width: 200px;
+    height: 150px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
+}
+.flexbox-activites-article-medium {
+    border: solid 1px white;
+    border-radius:20px;
+    background-color: white;
+    width: 200px;
+    height: 180px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
+}
+
+.flexbox-activites-article-tiny {
+    border: solid 1px white;
+    border-radius:20px;
+    background-color: white;
+    width: 200px;
+    height: 120px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
+}
+/*fin des différentes tailles*/
+
+.flexbox-footer {
+    display:flex;
+    flex-direction:row ;
+    width: 1200px;
+    height: 150px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    margin-top: 20px;
+}
+.flexbox-footer-child {
+    width: 350px;
+    display:flex;
+    flex-direction:column ;
+    margin-left:-20px /*astuce pour aligner correctment les li*/
+}
+.flexbox-footer-child h3 {
+    padding-left: 40px; /*pour aligner les titres avec les li*/
+}
+i.fa-info { /*cercle autour du i awesome font*/
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 0 0 1px #888;
+    
+    margin-right: 20px;
+    color:#0065FC;
+    height: 30px;
+    width: 30px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2, h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+h2 {
+    padding-left:20px
+}
+#content1 img, #content2 img {
+    border-radius:10px; 
+}
+#content3 img {
+    border-top-left-radius: 20px;/*bordure arrondie en haut sur le content3*/
+    border-top-right-radius: 20px;
+}
+
+.titre-article {
+    padding: 10px;
+    height: 30px;
+    font-size: 12px;
+}
+/* filtres*/
+.fas.fa-money-bill-wave, .fa-solid.fa-child-reaching, .fa-solid.fa-heart, .fa-solid.fa-dog {
+    color:#0065FC;
+    background-color:#DEEBFF ;
+    width: 48px;
+    height: 48px;
+    border-radius:50%;
+    box-shadow: 0 0 0 2px #DEEBFF; /*astuce pour rajouter du contour bleu autour du cercle de l'icone*/
+    /* alignement des icones au centre, obligé de passer par la car le child était ovale et non pas rond*/
+    display:flex;
+    align-items: center;        
+    justify-content: center;
+}
+.filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    gap:20px;
+    padding-top:20px;
+}
+.filter {
+    border:2px solid #F2F2F2;
+    border-radius:30px;
+    display: flex;
+    align-items: center;
+}
+.filter span {
+    font-weight: bold ;
+    padding:0 20px;
+}
+/*effets au survol sur les filtres*/
+.filter:hover {
+    color:blue;
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+}
+/*mediaqueries*/
+
+@media (max-width:768px) {
+    .sub-nav{
+        flex-basis: 100%;
+    }
+    .sub-nav a {
+       flex-basis: 50%; /*liens a centrés sur écran smartphone*/
+       text-align: center; /*texte centré*/
+       border-bottom:2px solid #F2F2F2;
+
+    }
+    .sub-nav a:hover { /*supression de la border top, rajour d'un border bottom*/
+        border-bottom: 2px solid #0065FC;
+        border-top-color:transparent;
+    }
+
+}
