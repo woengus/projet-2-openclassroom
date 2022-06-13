@@ -206,8 +206,8 @@ nav {
     padding: 10px;
     box-shadow: 0 0 20px #0000002e;
     flex-grow:1;
-    width: 320px;
-    
+    width: 300px;
+    max-width: 300px;
 }
 .house-card p,
 .popular-description h3,
@@ -220,7 +220,7 @@ nav {
 .house-card img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width:250px;
+    width:280px;
     height: 120px;
     object-fit: cover;
     object-position: top;
@@ -272,6 +272,11 @@ nav {
 }
 .popular-description h3 {
     margin-bottom: auto;
+}
+.popular h2, .town h2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
 }
 /*fin city & popular*/
 .flexbox-footer {
@@ -409,5 +414,12 @@ h2 {
     }
     .popular { /*pour passer la div popular en premier lors du responsive*/
         order:-1;
+    }
+    .house-card {
+        max-width: 320px;
+        width: 320px;
+    }
+    .house-card img {
+        width: 300px;
     }
 }
