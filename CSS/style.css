@@ -99,18 +99,8 @@ input[type="search"], button { /*enleve les styles par défauts des boutons et b
     margin:10px;
  
 }
-.economique i, .familial i, .romantique i, .animaux-autorises i {
-    border-radius: 20px;
-    border:solid var(--gray);
-    border-width :1px;
-   
-}
-.cercle {
-    height: 125px;
-    width: 125px;
-    background-color: var(--light-gray);
-    border-radius: 50%;
-}
+
+
 #content {
     padding: 10px 20px 0px 20px;
 }
@@ -320,11 +310,11 @@ h2 {
 /* filtres*/
 .fas.fa-money-bill-wave, .fa-solid.fa-child-reaching, .fa-solid.fa-heart, .fa-solid.fa-dog {
     color:var(--dark-blue);
-    background-color:var(--light-gray) ;
+    background-color:var(--light-blue) ;
     width: 48px;
     height: 48px;
     border-radius:50%;
-    box-shadow: 0 0 0 2px var(--light-gray); /*astuce pour rajouter du contour bleu autour du cercle de l'icone*/
+    box-shadow: 0 0 0 2px var(--light-blue); /*astuce pour rajouter du contour bleu autour du cercle de l'icone*/
     /* alignement des icones au centre, obligé de passer par la car le child était ovale et non pas rond*/
     display:flex;
     align-items: center;        
