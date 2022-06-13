@@ -13,6 +13,12 @@
     --light-gray:#F2F2F2;
     --gray:#888;
 }
+.blue {
+    color:var(--dark-blue)
+}
+.gray {
+    color:var(--light-gray)
+}
 /* placeholder de la recherche en noir et bold*/
 ::-webkit-input-placeholder {
     color: black;
@@ -164,54 +170,7 @@ nav {
     width: 200px;
     padding-left:20px;
 }
-.content1_2 {
-    display:flex;
-    flex-direction:row ;
-    width: 1200px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-#content1 {
-    background-color: var(--light-gray);
-    width: 750px;
-    height:700px;
-    border-radius:30px;
-    padding:15px;
-    
-}
-#content2 {
-    background-color: var(--light-gray);
-    width:330px;
-    height:700px;
-    border-radius:30px;
-    padding:15px;
-}
-.articles {
-    
-    display:flex;
-    flex-direction:row ;
-    flex-wrap: wrap;
-    width: 750px;
-    height:600px;
-}
-.article-content {
-    width: 200px;
-    height:220px;
-    padding: 20px;
-    margin:18px;
-    border: solid 1px white;
-    border-radius:20px;
-    background-color: white;
-}
-.article-content2 {
-    width: 265px;
-    height:165px;
-    padding: 20px;
-    margin:18px;
-    border: solid 1px white;
-    border-radius:20px;
-    background-color: white;
-}
+
 
 .flexbox-activites {
     display:flex;
@@ -221,53 +180,100 @@ nav {
     flex-wrap: wrap;
     
 }
-/*différentes tailles des articles en Activités à Marseille*/
-.flexbox-activites-article {
-    border: solid 1px white;
-    border-radius:20px;
-    background-color: white;
-    width: 200px;
-    height: 320px;
-    box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
-    -moz-box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
-    -webkit-box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
+/* partie city & popular*/
+.houses-list {
+    display: flex;
+    gap:20px;
 }
-.flexbox-activites-article-small {
-    border: solid 1px white;
-    border-radius:20px;
-    background-color: white;
-    width: 200px;
-    height: 150px;
-    margin-bottom: 20px;
-    box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
-    -moz-box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
-    -webkit-box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
+.houses-list > div { /* le > est pour selectioner seulement le premier enfant*/
+    background-color: var(--light-gray);
+    padding:20px;
+    border-radius: 20px;
+    margin-left: 20px;
 }
-.flexbox-activites-article-medium {
-    border: solid 1px white;
-    border-radius:20px;
-    background-color: white;
-    width: 200px;
-    height: 180px;
-    margin-bottom: 20px;
-    box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
-    -moz-box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
-    -webkit-box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
+.houses-list .town { /*town 2 fois plus grand que popular*/
+    flex-basis: 66%;
 }
-
-.flexbox-activites-article-tiny {
-    border: solid 1px white;
-    border-radius:20px;
+.houses-list .town a {
+    font-weight: bold;
+}
+.houses-list .popular {
+    flex-basis:33%;
+}
+.house-card {
     background-color: white;
-    width: 200px;
+    border-radius:20px;
+    padding: 10px;
+    box-shadow: 0 0 20px #0000002e;
+    flex-grow:1;
+    width: 320px;
+    
+}
+.house-card p,
+.popular-description h3,
+.popular-description p {
+    margin:2px;
+}
+.house-card h3 {
+    margin:2px;
+}
+.house-card img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width:250px;
     height: 120px;
-    margin-bottom: 20px;
-    box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
-    -moz-box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
-    -webkit-box-shadow: 0px 0px 10px 4px rgba(242, 242, 242, 0.75);
+    object-fit: cover;
+    object-position: top;
 }
-/*fin des différentes tailles*/
+.town {
+    width: 720px;
+   
+}
+.town-houses-list {
+    display:flex;
+    flex-wrap:wrap; /*sinon les div s'affichent toutes sur la même ligne car y a la place*/
+    justify-content:space-around;
+    margin-bottom: 20px;
+    gap:20px;
+}
 
+.houses-list .popular-flex {
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.popular {
+    width: auto;
+    max-width: 360px;
+    min-width: 360px;
+}
+.popular-house-card {
+   display:flex;
+   background-color: white;
+   border-radius:20px;
+   padding: 10px;
+   box-shadow: 0 0 20px #0000002e;
+   flex-grow:1;
+   width: 320px;
+}
+.popular-house-card img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 120px;
+    width: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+.popular-description {
+    flex-basis:100%;
+    display:flex;
+    flex-direction:column;
+
+}
+.popular-description h3 {
+    margin-bottom: auto;
+}
+/*fin city & popular*/
 .flexbox-footer {
     display:flex;
     flex-direction:row ;
@@ -386,9 +392,22 @@ h2 {
     .fas.fa-search {
         display:inline;
     }
-    h2 { /*pour mettre le titre filtre au dessus des filtres en responsive*/
+    .filter-list h2 { /*pour mettre le titre filtre au dessus des filtres en responsive*/
         flex:1;
         order: -1;
         flex: 1 0 100%;
+    }
+    .houses-list { /* affichage en colonne des parties appartements populaires et hébergement à Marseille*/
+        flex-direction: column;
+    }
+    .houses-list .town {
+        background-color: white;
+    }
+    .town-houses-list {
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+    .popular { /*pour passer la div popular en premier lors du responsive*/
+        order:-1;
     }
 }
