@@ -17,6 +17,7 @@
     --light-gray:#F2F2F2;
     --gray:#888;
 }
+
 .blue {
     color:var(--dark-blue)
 }
@@ -40,8 +41,8 @@ li {
 .flexbox-footer {
     display:flex;
     flex-direction:row ;
-    width: 1200px;
-    height: 150px;
+    width: auto;
+    height: auto;
     justify-content: flex-start;
     flex-wrap: wrap;
     background-color: var(--light-gray);
@@ -63,7 +64,7 @@ h3 {
 h2 {
     font-size: 20px;
     font-weight: bold;
-    padding-left:20p;
+    
 }
 /* filtres*/
 .fas.fa-money-bill-wave, .fa-solid.fa-child-reaching, .fa-solid.fa-heart, .fa-solid.fa-dog {

@@ -115,3 +115,15 @@ i.fa-info { /*cercle autour du i awesome font*/
     align-items: center;
     justify-content: center;
 }
+.house-card:hover {
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.popular-house-card:hover {
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05);
+    cursor: pointer;
+}

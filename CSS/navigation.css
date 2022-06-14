@@ -24,7 +24,10 @@ nav a:hover {
 .sub-nav {
     display: flex;
 }
-#logo {
+.logo {
     margin-right: auto;
-    padding-left: 0 20px; /*padding horizontal*/
+    padding-left:20px;
+}
+.logo {
+    height: 64px;
 }
