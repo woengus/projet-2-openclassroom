@@ -3,6 +3,7 @@
 @import url(house-popular.css);
 @import url(navigation.css);
 @import url(recherche.css);
+@import url(activity.css);
 * { /*utilisation de la police pour toute la page web*/
     -moz-box-sizing: border-box;
     -webkit-box-sizing:border-box ;
@@ -28,12 +29,6 @@ a {
 }
 .bold{
     font-weight: bold;
-}
-.info {
-    padding-left:20px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
 }
 li {
     list-style: none; /*enlève les puces*/
@@ -61,19 +56,6 @@ li {
 .flexbox-footer-child h3 {
     padding-left: 40px; /*pour aligner les titres avec les li*/
 }
-i.fa-info { /*cercle autour du i awesome font*/
-    display: inline-block;
-    border-radius: 50%;
-    box-shadow: 0 0 1px var(--gray);
-    margin-right: 20px;
-    color:var(--dark-blue);
-    height: 30px;
-    width: 30px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-
 h2, h3 {
     font-size: 16px;
     font-weight: bold;
@@ -172,5 +154,37 @@ h2 {
     }
     .house-card img {
         width: 300px;
+    }
+    .article-large img{
+        height: 120px;
+        width: 320px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px var(--light-gray);
+        padding:10px;
+        margin:0 20px;
+    }
+    .article-medium img{
+        height: 120px;
+        width: 320px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px var(--light-gray);
+        padding:10px;
+        margin:0 20px;
+    }
+    .article-small img{
+        height: 120px;
+        width: 320px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px var(--light-gray);
+        padding:10px;
+        margin:0 20px;
+    }
+    .article-tiny img{
+        height: 120px;
+        width: 320px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px var(--light-gray);
+        padding:10px;
+        margin:0 20px;
     }
 }
