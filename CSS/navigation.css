@@ -1,0 +1,30 @@
+h1 {
+    font-size: 24px;
+}
+nav {
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.nav-ul {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    padding:20px;
+    border-top: 2px solid transparent;/* évite que le hover rajoute des pixels et fasse bouger le texte et le logo*/
+}
+nav a:hover {
+    color:var(--dark-blue);
+    border-top-color:var(--dark-blue);
+}
+.sub-nav {
+    display: flex;
+}
+#logo {
+    margin-right: auto;
+    padding-left: 0 20px; /*padding horizontal*/
+}
