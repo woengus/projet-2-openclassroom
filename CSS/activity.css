@@ -1,51 +1,60 @@
-.articles {
+.flexbox-activity {
     display:flex;
     flex-direction:row ;
     flex-wrap: wrap;
 }
-.activites {
+.activity {
     padding-top:20px;
     padding-left:20px;
 }
-.article-flex1 {
+.activity-flex1 {
     display:flex;
     flex-direction: column;
 }
-.article-flex2 {
+.activity-flex2 {
     display:flex;
     flex-direction: column;
 }
-.article-large img{
+.activity-large {
+    border-radius: 20px;
+    box-shadow: 0 0 20px var(--light-gray);
+    padding:10px;
+    margin-right:40px;
+    max-height: 450px;
+}
+.activity-large img{
     height: 400px;
     width: 300px;
+}
+.activity-medium{
     border-radius: 20px;
     box-shadow: 0 0 20px var(--light-gray);
     padding:10px;
-    margin-right:20px;
+    margin-right:40px;
 }
-.article-medium img{
+.activity-medium img{
     height: 230px;
     width: 300px;
+}
+.activity-small {
     border-radius: 20px;
     box-shadow: 0 0 20px var(--light-gray);
     padding:10px;
-    margin-right:20px;
+    margin-right:40px;
 }
-.article-small img{
+.activity-small img{
     height: 200px;
     width: 300px;
+}
+.activity-tiny {
     border-radius: 20px;
     box-shadow: 0 0 20px var(--light-gray);
     padding:10px;
-    margin-right:20px;
+    margin-right:40px;
 }
-.article-tiny img{
+.activity-tiny img{
     height: 170px;
     width: 300px;
-    border-radius: 20px;
-    box-shadow: 0 0 20px var(--light-gray);
-    padding:10px;
-    margin-right:20px;
 }
 .flexbox-activites {
     display:flex;
@@ -53,4 +62,8 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     padding: 20px;
+}
+.flexbox-activity img {
+    border-top-right-radius:20px ;
+    border-top-left-radius:20px ;
 }

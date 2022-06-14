@@ -56,11 +56,13 @@ li {
 .flexbox-footer-child h3 {
     padding-left: 40px; /*pour aligner les titres avec les li*/
 }
-h2, h3 {
+h3 {
     font-size: 16px;
     font-weight: bold;
 }
 h2 {
+    font-size: 20px;
+    font-weight: bold;
     padding-left:20p;
 }
 
@@ -155,36 +157,19 @@ h2 {
     .house-card img {
         width: 300px;
     }
-    .article-large img{
-        height: 120px;
-        width: 320px;
-        border-radius: 20px;
-        box-shadow: 0 0 20px var(--light-gray);
-        padding:10px;
-        margin:0 20px;
+    /*redimmensionnement et positionnement des activity à Marseille*/
+    .activity-large img, .activity-medium img, .activity-small img, .activity-tiny img{
+        height: 150px;
+        width: 300px;
+      
     }
-    .article-medium img{
-        height: 120px;
+    .activity-large, .activity-medium, .activity-small, .activity-tiny {
+        height: 210px;
         width: 320px;
-        border-radius: 20px;
-        box-shadow: 0 0 20px var(--light-gray);
-        padding:10px;
-        margin:0 20px;
+        margin-left:20px;
+        padding-bottom:20px;
     }
-    .article-small img{
-        height: 120px;
-        width: 320px;
-        border-radius: 20px;
-        box-shadow: 0 0 20px var(--light-gray);
-        padding:10px;
-        margin:0 20px;
-    }
-    .article-tiny img{
-        height: 120px;
-        width: 320px;
-        border-radius: 20px;
-        box-shadow: 0 0 20px var(--light-gray);
-        padding:10px;
-        margin:0 20px;
+    .activity {
+        padding-top:0;
     }
 }
