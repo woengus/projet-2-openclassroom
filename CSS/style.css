@@ -4,6 +4,8 @@
 @import url(navigation.css);
 @import url(recherche.css);
 @import url(activity.css);
+@import url(footer.css);
+
 * { /*utilisation de la police pour toute la page web*/
     -moz-box-sizing: border-box;
     -webkit-box-sizing:border-box ;
@@ -38,33 +40,14 @@ li {
 .fa-solid { 
     vertical-align: middle;
 }
-.flexbox-footer {
-    display:flex;
-    flex-direction:row ;
-    width: auto;
-    height: auto;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    background-color: var(--light-gray);
-    margin-top: 20px;
-}
-.flexbox-footer-child {
-    width: 350px;
-    display:flex;
-    flex-direction:column ;
-    margin-left:-20px /*astuce pour aligner correctment les li*/
-}
-.flexbox-footer-child h3 {
-    padding-left: 40px; /*pour aligner les titres avec les li*/
-}
+
 h3 {
     font-size: 16px;
     font-weight: bold;
 }
 h2 {
     font-size: 20px;
-    font-weight: bold;
-    
+    font-weight: bold; 
 }
 /* filtres*/
 .fas.fa-money-bill-wave, .fa-solid.fa-child-reaching, .fa-solid.fa-heart, .fa-solid.fa-dog {

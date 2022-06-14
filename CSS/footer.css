@@ -1,0 +1,22 @@
+.footer-link hover{
+    color:var(--blue)
+}
+.flexbox-footer {
+    display:flex;
+    flex-direction:row ;
+    width: auto;
+    height: auto;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: var(--light-gray);
+    margin-top: 20px;
+}
+.flexbox-footer-child {
+    width: 350px;
+    display:flex;
+    flex-direction:column ;
+    margin-left:-20px /*astuce pour aligner correctment les li*/
+}
+.flexbox-footer-child h3 {
+    padding-left: 40px; /*pour aligner les titres avec les li*/
+}
