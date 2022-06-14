@@ -17,3 +17,6 @@
 .flexbox-footer-child h3 {
     padding-left: 40px; /*pour aligner les titres avec les li*/
 }
+.flexbox-footer li {
+    margin-bottom:10px;
+}
