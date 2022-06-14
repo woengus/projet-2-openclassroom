@@ -20,7 +20,8 @@
     box-shadow: 0 0 20px var(--light-gray);
     padding:10px;
     margin-right:40px;
-    max-height: 450px;
+    max-height: 470px;
+    margin-bottom:20px;
 }
 .activity-large img{
     height: 380px;
@@ -31,6 +32,7 @@
     box-shadow: 0 0 20px var(--light-gray);
     padding:10px;
     margin-right:40px;
+    margin-bottom:10px;
 }
 .activity-medium img{
     height: 180px;
@@ -41,6 +43,7 @@
     box-shadow: 0 0 20px var(--light-gray);
     padding:10px;
     margin-right:40px;
+    margin-bottom:10px;
 }
 .activity-small img{
     height: 150px;
@@ -51,6 +54,7 @@
     box-shadow: 0 0 20px var(--light-gray);
     padding:10px;
     margin-right:40px;
+    margin-bottom:10px;
 }
 .activity-tiny img{
     height: 120px;
