@@ -11,9 +11,7 @@
 .houses-list .town { /*town 2 fois plus grand que popular*/
     flex-basis: 66%;
 }
-.houses-list .town a {
-    font-weight: bold;
-}
+
 .houses-list .popular {
     flex-basis:33%;
 }
