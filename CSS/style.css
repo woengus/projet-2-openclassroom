@@ -91,6 +91,103 @@ h2 {
 }
 /*mediaqueries*/
 
+@media (min-width: 769px) and (max-width:992px) {
+    .sub-nav{
+        flex-basis: 100%;
+    }
+    .sub-nav a {
+       flex-basis: 50%; /*liens a centrés*/
+       text-align: center; /*texte centré*/
+       border-bottom:2px solid var(--light-gray);
+
+    }
+    .sub-nav a:hover { /*supression de la border top, rajour d'un border bottom*/
+        border-bottom: 2px solid var(--dark-blue);
+        border-top-color:transparent;
+    }
+    .search-form .search-text { /*enlève le texte du bouton rechercher*/
+       display:none;
+    }
+    .button {
+        width: auto;
+        border-radius: 10px;
+    }
+    .fas.fa-search {
+        display:inline;
+    }
+    .filter-list h2 { /*pour mettre le titre filtre au dessus des filtres en responsive*/
+        flex:1;
+        order: -1;
+        flex: 1 0 100%;
+    }
+    .houses-list { /* affichage en colonne des parties appartements populaires et hébergement à Marseille*/
+        flex-direction: column;
+    }
+    .popular { /*pour passer la div popular en premier lors du responsive*/
+        order:-1;
+    }
+    .houses-list > div {
+       margin:0 auto;
+       border-radius:0;
+    }
+    .activity > div {
+        margin:0 auto;
+    }
+    .houses-list .town {
+        background-color: white;
+        margin:0 auto;
+    }
+    .town {
+        width: 100%;
+    }
+    .town-houses-list { 
+        flex-basis: 100%;
+    }
+    .house-card {
+        max-width: 320px;
+        width: 320px;
+    }
+    .house-card img {
+        width: 300px;
+    }
+
+    .activity {
+        width: 100%;
+        margin:0 auto;
+        border-radius:0;
+         
+    }
+
+    /*redimmensionnement et positionnement des activity à Marseille*/
+    .activity-large img, .activity-medium img, .activity-small img, .activity-tiny img{
+        height: 150px;
+        width: 300px;
+      
+    }
+    .activity-large, .activity-medium, .activity-small, .activity-tiny {
+        height: 210px;
+        width: 320px;
+        margin-left:20px;
+        padding-bottom:20px;
+        margin-bottom:20px;
+    }
+    .activity {
+        padding-top:0;
+        padding-left:0px;
+    }
+    .activity h2 {
+        padding-left:20px;
+    }
+    .logo {
+        margin-right:auto;
+        margin-left:auto;
+    }
+    .info {
+        padding: 0 20px;
+    }
+  
+}
+
 @media (max-width:768px) {
     .sub-nav{
         flex-basis: 100%;
@@ -122,6 +219,11 @@ h2 {
     }
     .houses-list { /* affichage en colonne des parties appartements populaires et hébergement à Marseille*/
         flex-direction: column;
+    }
+
+    .houses-list > div {
+        margin-left:0;
+        border-radius:0;
     }
     .houses-list .town {
         background-color: white;
@@ -155,5 +257,30 @@ h2 {
     }
     .activity {
         padding-top:0;
+        padding-left:0px;
+    }
+    .flexbox-activity {
+        flex-direction: column;
+    }
+    .activity h2 {
+        padding-left:20px;
+    }
+    .logo {
+        margin-right:auto;
+        margin-left:auto;
+    }
+    .info {
+        padding: 0 20px;
+    }
+    .flexbox-footer {
+        flex-direction: column;
+    }
+    .flexbox-footer-child {
+        width:350px;
+    }
+}
+@media (max-width:414px) {
+    i.fa-info {
+        width: 40px;
     }
 }
