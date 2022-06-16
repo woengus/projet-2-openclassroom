@@ -142,6 +142,7 @@ h2 {
     }
     .town-houses-list { 
         flex-basis: 100%;
+
     }
     .house-card {
         max-width: 320px;
@@ -229,12 +230,19 @@ h2 {
         background-color: white;
     }
     .town-houses-list {
-        flex-direction: column;
         flex-basis: 100%;
+        justify-content: space-evenly;
     }
     .popular { /*pour passer la div popular en premier lors du responsive*/
         order:-1;
+        margin-right:0;
     }
+    .popular-house-card {
+        width: 320px;
+     }
+     .popular-flex {
+        align-items: center;
+     }
     .house-card {
         max-width: 320px;
         width: 320px;
@@ -259,11 +267,12 @@ h2 {
         padding-top:0;
         padding-left:0px;
     }
-    .flexbox-activity {
-        flex-direction: column;
-    }
+  
     .activity h2 {
         padding-left:20px;
+    }
+    .flexbox-activity {
+        justify-content: space-evenly;
     }
     .logo {
         margin-right:auto;
