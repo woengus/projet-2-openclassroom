@@ -307,6 +307,7 @@ h2 {
     .activity-large, .activity-medium, .activity-small, .activity-tiny {
         min-width: 320px;
         margin:0 auto;
+        margin-bottom: 20px;
     }
     .activity img {
         width: 300px;
