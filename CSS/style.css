@@ -236,16 +236,18 @@ h2 {
     .popular { /*pour passer la div popular en premier lors du responsive*/
         order:-1;
         margin-right:0;
+        min-width: auto;
     }
     .popular-house-card {
-        width: 320px;
+        width: auto;
+        max-width:340px ;
      }
      .popular-flex {
         align-items: center;
      }
     .house-card {
         max-width: 320px;
-        width: 320px;
+        width: auto;
     }
     .house-card img {
         width: 300px;
@@ -258,7 +260,8 @@ h2 {
     }
     .activity-large, .activity-medium, .activity-small, .activity-tiny {
         height: 210px;
-        width: 320px;
+        width: auto;
+        max-width: 300px;
         margin-left:20px;
         padding-bottom:20px;
         margin-bottom:20px;
@@ -274,6 +277,7 @@ h2 {
     .flexbox-activity {
         justify-content: space-evenly;
     }
+   
     .logo {
         margin-right:auto;
         margin-left:auto;
@@ -285,11 +289,26 @@ h2 {
         flex-direction: column;
     }
     .flexbox-footer-child {
-        width:350px;
+        min-width:320px;
     }
 }
 @media (max-width:414px) {
     i.fa-info {
         width: 40px;
+    }
+    .flexbox-activity a {
+        display: inline-block;
+    }
+    .activity {
+        width: auto;
+        margin:0 auto;
+        border-radius:0;
+    }
+    .activity-large, .activity-medium, .activity-small, .activity-tiny {
+        min-width: 320px;
+        margin:0 auto;
+    }
+    .activity img {
+        width: 300px;
     }
 }
